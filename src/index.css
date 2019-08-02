@@ -1,0 +1,180 @@
+
+/* Kps Style sheet by KPSdev.org*/
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a :active {
+  color:black;
+}
+a :hover{
+  color:white;
+}
+a :visited {
+  color:yellow;
+}
+
+body {
+  font-family: 'Lucida Sans Unicode';
+  background: -webkit-linear-gradient(to left, rgb(167, 231, 154) , #C4E0E5);
+  background: linear-gradient(to left, rgb(167, 231, 154) , #C4E0E5);
+  border: 0px solid green;
+  margin-left:5px;
+  margin-right:5px;
+}
+
+button {
+  /* text-transform: uppercase;
+    color: black; */
+  padding: 0px;
+  font-size: 1em;
+  font-weight: bold; 
+  color: black;
+}
+#highfloater {
+  top:30px;
+  text-align: center;
+  font-size: 1.0em;
+  color : black;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.grid-container {
+  background-image: url(/feltbackground.jpg) !important;
+  position: relative;
+  margin-top:5px;
+  margin-left:2px;
+  margin-right:2px;
+  padding:2px;
+  top:5%;
+  height:90%; 
+  /* outline: 5px solid blue; */
+  display:grid;
+  /* grid-template:(3, 33.3%) / (9,7%); */
+  grid-template-columns: 30% 40% 27%;
+  grid-template-rows: 7% 7% 7% 7% 7% 7% 7% 7% 7%;
+  grid-column-gap:.5em;
+  grid-row-gap: .75rem;
+  grid-template-areas: 
+  "header1 header2 header3"
+  "content1 content2 content3"
+  "content4 content5 content6"
+  "content7 content8 content9"
+  "content10 content11 content12"
+  "content13 content14 content15"
+  "footer1 footer2 footer3"
+  "footer4 footer5 footer6"
+  "footer7 footer8 footer9"
+  ;
+  min-height: 0; /* new */
+  min-width: 0; /* new; needed for FF */
+  text-align: center; 
+  font-size: 1em;
+  background-color: lightgreen; 
+  border-radius: 5%;
+  border:2px solid black;
+ }
+
+ .dCount {font-size:.69em;color:white;grid-area: header1;align-self:start;justify-self:center;grid-column: 1 / 1 }
+
+ .d1{background:rgb(2, 61, 2);color:white;border-radius: 50%;width:5rem;grid-area: header2;align-self:start;justify-self:center; }
+ 
+ /*Hit and Stand & continue d5 blue*/
+  .hitstay{width:9rem;grid-area: content1;align-self:center;justify-self:center;grid-row:2/2;grid-column:1/3;}
+  .placeholder{width:1rem;}
+ .d2{background:PaleGreen;border-radius: 50%;width:4rem;grid-area: content1;align-self:center;justify-self:center;grid-row:2/2;grid-column:1/2;}
+ .d5{background:blue;color:white;border-radius: 50%;width:5rem;grid-area: content2;align-self:center;justify-self:center;grid-column:2/2;}
+ .d3{background:PaleGreen;border-radius: 50%;width:4rem;grid-area: content3;align-self:center;justify-self:center;grid-row:2/2;grid-column:3/3;} 
+
+
+ .d4{background:blue;color:white;border-radius: 50%;width:5rem;grid-area: content11;align-self:center;justify-self:center;}
+
+ 
+ /*Betting Chips */
+ .tableBet{width:9rem;grid-area:content8 !important;align-self:center;justify-self:center;grid-row:5/6; grid-column: 1/3}
+ .b1{background:Red;color:white;border-radius: 50%;width:3rem;grid-area: content8 !important;align-self:center;justify-self:center;}
+ .b2{background:green;color:white;border-radius: 50%;width:3rem;grid-area: content8 !important;align-self:center;justify-self:center;}
+ .b3{background:blue;color:white;border-radius: 50%;width:3rem;grid-area: content8 !important;align-self:center;justify-self:center;}
+
+ .betValue{width:5rem;color:white; font-weight:bold; grid-area: content14;align-self:center;justify-self:center;grid-row:6/7;}
+ .bet{width:5rem;color:white; font-weight:bold; grid-area: content6;align-self:center;justify-self:center;grid-row: 3 / 4; }
+ 
+ .wallet {width:5rem;color:white; font-weight:bold; grid-area: content4;align-self:center;justify-self:center;grid-row: 3 / 4; }
+ 
+ .gmessage{text-transform:uppercase; color:yellow;font-weight:bold;width:15rem; grid-area: footer5;align-self:start;justify-self:center; grid-row:7/8 ;grid-column:2/3;padding:5px;}
+ 
+ a.footermessage{
+  font-weight: bolder;
+  color: white; 
+  font-style: italic;
+  grid-area: footer8; 
+  grid-column: 2 / 3;
+  grid-row: 9 / 10;
+  align-self: center;
+  justify-self:center;
+  padding: 20px;
+}
+ 
+ .player{
+  font-weight:bold;
+   width:15rem;color:white;grid-area: content5;align-self:center;justify-self:center;}
+ .playercards {margin: 0 auto;grid-area: content8;align-self:center;justify-self:center;
+  grid-column: 2 / 3;
+  }
+ 
+ .dealer{
+  font-weight:bold;
+  width:15rem;color:white;grid-area: content11;align-self:center;justify-self:center;}
+ .dealercards {margin: 0 auto;grid-area: content14;align-self:center;justify-self:center;
+  grid-column: 2 / 3;
+  }
+
+.card, .card-red {
+  height: 90px;
+  width: 70px;
+  background-color: #66c3d8;
+  border-radius:10% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.card-red {
+  color: rgb(135, 45, 45);
+}
+
+
+@media (max-width: 430px){
+
+.card, .card-red {
+  height: 3.0em;
+  width: 2.5em;
+  background-color: #66c3d8;
+  border-radius:10% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-red {
+  color: rgb(135, 45, 45);
+}
+   
+  .player{
+    font-weight:bold;
+     width:15em;color:white;grid-area: content8;align-self:start;justify-self:center;}
+  .playercards {margin: 0 auto;color:white;grid-area: content11;align-self:start;justify-self:center;
+      grid-column: 1 / 3;
+      }  
+ .dealer{font-weight:bold;
+        width:15em;color:white;grid-area: content14;align-self:start;justify-self:center;padding:10px;}   
+  .dealercards {margin: 0 auto;color:white;grid-area: footer2;align-self:start;justify-self:center;
+        grid-column: 1 / 3;
+      }
+      .gmessage{text-transform:uppercase; color:yellow;font-weight:bold;width:15rem; grid-area: footer5;align-self:start;justify-self:center; grid-column: 2/3; padding:5px; }
+    }   
+
